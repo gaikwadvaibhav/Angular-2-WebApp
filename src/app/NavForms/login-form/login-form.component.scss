@@ -1,0 +1,43 @@
+// .card{
+//     background-color: grey;
+// }
+
+.md-form .prefix ~ input, .md-form .prefix ~textarea{
+    margin-left: 3rem; 
+    width: 80%;
+    
+}
+
+
+
+body{margin:40px;}
+
+
+.btn-circle {
+//   background-color: #4285F4;
+  width : 30px;
+  height : 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.gbg{
+    background-color:   #d34836; 
+}
+.fbg{
+  background-color:  #3b5998;
+}
+.tbg{
+    background-color:  	#00aced;   
+}
+ 
+.img{
+    background-image: url('https://mdbootstrap.com/img/Photo/Others/pricing-table%20(7).jpg');
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+

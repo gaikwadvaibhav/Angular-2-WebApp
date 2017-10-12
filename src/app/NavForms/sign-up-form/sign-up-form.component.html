@@ -1,0 +1,46 @@
+<div class="container">        
+ <div class="row justify-content-center">
+   <div class="col-md-6">
+    <div class="card card-body">
+        
+     <form class="mt-5" #myForm="ngForm"  style="width: 22rem;">
+       <p class="h5 text-center mb-6">Sign up </p>
+ 
+        <div class="md-form">
+          <i class="fa fa-user prefix grey-text"></i>
+          <input type="text"  class="form-control" name="name" ngModel>
+          <label>Your name</label>
+        </div>
+        <div class="md-form">
+          <i class="fa fa-envelope prefix grey-text"></i>
+          <input type="text" class="form-control" name="email" ngModel>
+          <label class="">Your email</label>
+        </div>
+    
+        <div class="md-form">
+          <i class="fa fa-lock prefix grey-text"></i>
+          <input type="password"  class="form-control" name="password" ngModel>
+          <label  class="">Your password</label>
+        </div>
+
+        <div class="md-form">
+            <i class="fa fa-lock prefix grey-text"></i>
+            <input type="password"  class="form-control" name="confirmpassword" ngModel>
+            <label  class="">Re-Enter password</label>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="checkbox" class="check">
+            <label for="checkbox" class="grey-text">Accept the<a href="#" class="blue-text"> Terms and Conditions</a></label>
+        </div>
+        <div class="text-center">
+            <button type="submit" (click)="addNewUser(myForm)" class="btn btn-deep-orange waves-effect waves-light" [routerLink]= "['/login']">Sign up</button>
+        </div>     
+
+        <div class="modal-footer mx-5 pt-3 mb-1">
+            <p class="font-small grey-text d-flex justify-content-end">Have an account? <a  class="blue-text ml-1" [routerLink]= "['/login']"> Log in</a></p>
+        </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>
