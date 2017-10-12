@@ -6,6 +6,7 @@ import { ForgotPassFormComponent } from './NavForms/forgot-pass-form/forgot-pass
 import { ResetPassFormComponent } from './NavForms/reset-pass-form/reset-pass-form.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
+import { SearchResultComponent } from './search-result/search-result.component';
 
 export const routes: Routes = [
   // { path: '', component: NavBarComponent},
@@ -14,7 +15,8 @@ export const routes: Routes = [
   { path: 'login', component: LoginFormComponent },
   { path: 'signup', component: SignUpFormComponent},
   { path: 'forgotpass', component: ForgotPassFormComponent},
-  { path: 'resetpass', component: ResetPassFormComponent}
+  { path: 'resetpass', component: ResetPassFormComponent},
+  { path: 'searchresult', component: SearchResultComponent}
 ];
 
 @NgModule({

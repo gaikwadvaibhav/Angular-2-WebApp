@@ -23,6 +23,7 @@ import { HttpModule } from '@angular/http';
 // import {AngularFireModule } from 'angularfire2';
 // import { AuthService } from './auth.service';
 import { SignupService } from './NavForms/sign-up-form/signup.service';
+import { SearchResultComponent } from './search-result/search-result.component';
 
 // const firebase = {
 //   apiKey: 'AIzaSyAcL-E-mqaGw-xg0ly9v_PzsSTwDOEYOFU',
@@ -41,7 +42,8 @@ import { SignupService } from './NavForms/sign-up-form/signup.service';
     ForgotPassFormComponent,
     ResetPassFormComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,
