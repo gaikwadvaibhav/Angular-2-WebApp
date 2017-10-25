@@ -24,6 +24,8 @@ import { HttpModule } from '@angular/http';
 // import { AuthService } from './auth.service';
 import { SignupService } from './NavForms/sign-up-form/signup.service';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { ViewMessComponent } from './view-mess/view-mess.component';
+import { AddMessComponent } from './add-mess/add-mess.component';
 
 // const firebase = {
 //   apiKey: 'AIzaSyAcL-E-mqaGw-xg0ly9v_PzsSTwDOEYOFU',
@@ -43,7 +45,9 @@ import { SearchResultComponent } from './search-result/search-result.component';
     ResetPassFormComponent,
     NavBarComponent,
     HomeComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    ViewMessComponent,
+    AddMessComponent
   ],
   imports: [
     BrowserModule,

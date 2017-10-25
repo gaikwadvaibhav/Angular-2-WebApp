@@ -1,3 +1,4 @@
+import { ViewMessComponent } from './view-mess/view-mess.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginFormComponent } from './NavForms/login-form/login-form.component';
@@ -7,6 +8,7 @@ import { ResetPassFormComponent } from './NavForms/reset-pass-form/reset-pass-fo
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { AddMessComponent } from './add-mess/add-mess.component';
 
 export const routes: Routes = [
   // { path: '', component: NavBarComponent},
@@ -16,7 +18,9 @@ export const routes: Routes = [
   { path: 'signup', component: SignUpFormComponent},
   { path: 'forgotpass', component: ForgotPassFormComponent},
   { path: 'resetpass', component: ResetPassFormComponent},
-  { path: 'searchresult', component: SearchResultComponent}
+  { path: 'searchresult', component: SearchResultComponent},
+  { path: 'viewmess', component: ViewMessComponent},
+  { path: 'addmess', component: AddMessComponent}  
 ];
 
 @NgModule({
