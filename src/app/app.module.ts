@@ -26,6 +26,7 @@ import { SignupService } from './NavForms/sign-up-form/signup.service';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { ViewMessComponent } from './view-mess/view-mess.component';
 import { AddMessComponent } from './add-mess/add-mess.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // const firebase = {
 //   apiKey: 'AIzaSyAcL-E-mqaGw-xg0ly9v_PzsSTwDOEYOFU',
@@ -56,6 +57,7 @@ import { AddMessComponent } from './add-mess/add-mess.component';
     MaterializeModule,
     FormsModule,
     HttpModule,
+    NgbModule.forRoot()
     // AngularFirestoreModule,
     // AngularFireAuthModule,
     // AngularFireDatabaseModule,

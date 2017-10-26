@@ -3,143 +3,151 @@
      <div class="col-md-12">
 <div class="row" style="margin-top:20px">
     <div class="col-md-3">
-        <img src="/assets/bg.jpg" style="hight:220px; width: 150px;" />
-        <!-- <form action="#">
-          <div class="file-field">
-              <div class="btn btn-primary btn-sm">
-                  <span>Choose files</span>
-                  <input type="file" multiple>
-              </div>
-              <div class="file-path-wrapper">
-                  <input class="file-path validate" >
-              </div>
-          </div>
-      </form> -->
+ 
                 
       </div>
       <div class="col-md-9" style="margin-left:0px;">
-          <form action="/action_page.php">
-          <h6>   Mess Name: </h6>
-            <input type="text" name="fname" ><br> 
-            <!-- style="margin-left: 100px;" -->
-          <h6> Address:</h6> <div class="md-form">
-              <textarea type="text" id="form7" class="md-textarea"></textarea>
-              <!-- <label for="form7">Basic textarea</label> -->
-          </div><br>
-        <h6>  Contact No :</h6> <input type="text" name="lname"><br>
-            
+          <!-- <form > -->
+
+            <div class="card">
+                <div class="card-body ">
+                  <h6>Mess Name: </h6>
+                  <input type="text" name="messname" style="width:80%;" > 
+                     <!-- style="margin-left: 100px;" -->
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body ">
+                <h6> Address:</h6>
+                <input type="text" name="addname" style="width:80%;" >                
+            </div>
+        </div>
+ 
+          <div class="card">
+            <div class="card-body ">
+            <h6>  Contact No :</h6> <input type="text" style="width:80%;" name="lname">
+            </div>
+        </div>
+             
             <!-- <div class="md-form">
               <i  > Name</i>
               <input type="email" id="form81" class="form-control validate">
               <label for="form81" data-error="wrong" data-success="right">Enter Mess Name </label>
           </div> -->
             
-        <h6>  Select Opening Days : </h6> <br> <br>
-            <div class="form-group">
+    <div class="card">
+    <div class="card-body ">
+        <h6>  Select Opening Days : </h6> <br> <br> <br>
+            <div class="form-group"style="margin-left:20%;">
                 <input type="checkbox" class="filled-in" id="checkbox2">
-                <label for="checkbox2">Sunday</label>
+                <label for="checkbox2">Sunday</label> <br>
                 <input type="checkbox" class="filled-in" id="checkbox3">
-                <label for="checkbox3">Monday</label>
+                <label for="checkbox3">Monday</label> <br>
                 <input type="checkbox" class="filled-in" id="checkbox4">
-                <label for="checkbox4">Tuesday</label>
+                <label for="checkbox4">Tuesday</label> <br>
                 <input type="checkbox" class="filled-in" id="checkbox5">
-                <label for="checkbox5">Wednesday</label>
+                <label for="checkbox5">Wednesday</label> <br>
                 <input type="checkbox" class="filled-in" id="checkbox6">
-                <label for="checkbox6">Thursday</label>
-                <input type="checkbox" class="filled-in" id="checkbox7">
-                <label for="checkbox7">Friday</label>
+                <label for="checkbox6">Thursday</label> <br>
+                 <input type="checkbox" class="filled-in" id="checkbox7">
+                <label for="checkbox7">Friday</label> &nbsp; <br>
                 <input type="checkbox" class="filled-in" id="checkbox8">
                 <label for="checkbox8">Saturday</label>
             </div>
-          <h6> Timing : </h6> <br> <br>
+        </div>
+    </div>
 
-             <div class="d-flex flex-row">
-              <div class="p-2">  Open : <input id="time" type="time"></div>
-              <div class="p-2">  Close : <input id="time" type="time"></div>
+    <div class="card">
+        <div class="card-body ">
+        
+        <div style="float:left;">
+            <h6> Timing : &nbsp; Open &nbsp;&nbsp; </h6>
+             <div class="d-flex flex-row" >
+               <ngb-timepicker [(ngModel)]="time" [meridian]="meridian" style="width:170px; hight:100px"></ngb-timepicker>
              </div>
-             
-            <h6> Add Location  :</h6> <br> <br>
-
-            <h6> Add Detail  :</h6> <br> <br>            
-                               
-            <ul class="nav md-pills nav-justified pills-secondary">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#panel4" role="tab">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#panel11" role="tab">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#panel12" role="tab">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#panel13" role="tab">Help</a>
-                </li>
-            </ul>
-            
-            <!-- Tab panels -->
-            <div class="tab-content">
-            
-                <!--Panel 1-->
-                <div class="tab-pane fade in show active" id="panel11" role="tabpanel">
-                    <br>
-            
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                        reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                        porro voluptate odit minima.</p>
-            
-                </div>
-                <!--/.Panel 1-->
-            
-                <!--Panel 2-->
-                <div class="tab-pane fade" id="panel12" role="tabpanel">
-                    <br>
-            
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                        reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                        porro voluptate odit minima.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                        reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                        porro voluptate odit minima.</p>
-            
-                </div>
-                <!--/.Panel 2-->
-            
-                <!--Panel 3-->
-                <div class="tab-pane fade" id="panel13" role="tabpanel">
-                    <br>
-            
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                        reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                        porro voluptate odit minima.</p>
-            
-                </div>
-                <!--/.Panel 3-->
-            
-                <!--Panel 4-->
-                <div class="tab-pane fade" id="panel14" role="tabpanel">
-                    <br>
-            
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                        reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                        porro voluptate odit minima.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                        reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                        porro voluptate odit minima.</p>
-            
-                </div>
-                <!--/.Panel 4-->
-            
+        </div>
+        <div style="float:right;">
+             <h6> &nbsp; Close &nbsp;&nbsp;  </h6>
+             <div class="d-flex flex-row" >
+               <ngb-timepicker [(ngModel)]="time1" [meridian]="meridian1" style="width:170px; hight:100px"></ngb-timepicker>
             </div>
-                                        
-                                        Copy
-            
-              
+        </div>
+     </div>
+    </div>
+        
+        
+     
+    <div class="card">
+         <div class="card-body ">
+            <h6> Add Location  :</h6> 
+        </div>
+    </div>
+
  
-            <input type="submit" class="btn btn-info" value="Submit">
-          </form>              
-      </div>
+    <div class="card">
+        <div class="card-body ">
+            <h6> Add Detail  :</h6>
+           
+                               <br><br>
+                            
+<!-- Nav tabs -->
+<ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+        <a class="nav-link" [style.background-color]="brd1" data-toggle="pill" (click)="Onprofile()"   role="tab">Menu Card</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" [style.background-color]="brd2" (click)="Onfollow()"   role="tab">Mess Charges</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" (click)="Oncontact()"  [style.background-color]="brd3"  role="tab">Photos</a>
+    </li>
+</ul>
+<!-- Tab panels -->
+<div class="tab-content card">
+    <!--Panel 1-->
+    <div *ngIf="one" id="panel1" role="tabpanel">
+        <br>
+        <div class="card-body ">
+           
+        </div>
+    </div>
+    <!--/.Panel 1-->
+    <!--Panel 2-->
+    <div *ngIf="two" id="panel2" role="tabpanel">
+        <br>
+        <div class="card-body ">               
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+             estias. Quisqu ra, placeat ratione
+            .</p>
+        <p>Lorem ipsum do el iatur. Tempora, placeat ratione
+            porro voluptate odit minima.</p>
+    </div>
+    </div>
+    <!--/.Panel 2-->
+    <!--Panel 3-->
+    <div  *ngIf="three" id="panel3" role="tabpanel">
+        <br>
+        <div class="card-body ">              
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+            reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+            porro voluptate odit minima.</p>
+    </div>
+    </div>
+    <!--/.Panel 3-->
 </div>
+</div>
+</div>
+                            
+ <div class="text-center">
+        <button type="submit" class="btn btn-deep-orange waves-effect waves-light">Submit</button>
+    </div>
+          <!-- </form>  -->
+          
+            
+
+      </div>
+    </div>
      
      </div>
    </div>
