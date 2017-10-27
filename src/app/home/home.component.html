@@ -5,33 +5,53 @@
 </body>
 
 <div class="container">
-  <div class="row">
+  <div class="row" >
       <div class="col-md-12">     
-         <div class="row jumbotron brd"style="margin-top:170px">
-             
-          <div class="col-md-4">
+         <div class="row  brd" style="margin-top:170px;background-color:lightgrey">
+           <div class="col-md-4">
+
               <input class="form-control twitter-typeahead tt-input" 
               placeholder="Enter an City" 
               type="text"              
               style="position: relative; vertical-align: top; background-color: transparent;">
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-5">
                <input type="text"               
               name="area"
               required="required"               
               class="form-control" 
-              placeholder="Enter an area" />
+              placeholder="Enter an area"
+              style="hight:50px;" />
             </div>
 
-          <div class="col-md-4">
-              <button type="submit"
+          <div class="col-md-3"style="background-color:#6EA4D9">             
+            <h5 >Search </h5>
+            <!-- <button type="submit"
               id="button" 
               name="button" 
-              class="btn btn-deep-orange waves-effect waves-light" [routerLink]= "['/searchresult']">Search</button>
+              class="btn btn-deep-orange waves-effect waves-light "
+              [routerLink]= "['/searchresult']"
+              style="margin-top:15px;background-color:#6EA4D9">Search</button> -->
+
+
           </div>
       </div>
     </div>
   </div>
    </div>
   
+
+ <!-- <div class="col-md-8" class="jambotron">      
+<div class="row">
+            <div class="col-md-6">
+                    <input class="suggest-keyword-field acoff" valtype="keyword" id="keyword" x-webkit-speech="" lang="en_IN" oninput="autoSuggest();" name="keyword" placeholder="Type Location or Project/Society or Keyword" type="text" nameinerr="keyword" customizederrclass="custErr" autocomplete="off">
+            </div>
+             <div class="col-md-3">
+                    <input type="submit" class="btn b blue f18 " id="submit_query" value="Search">
+             </div>
+            <div class="col-md-3">
+                     <button class="btn b green f18 " id="map_submit_query">Map</button>                    
+             </div>
+    </div>
+</div> -->

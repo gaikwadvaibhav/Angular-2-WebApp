@@ -10,6 +10,7 @@ export class SignupService {
 
   }
   saveUser(user: User) {
-      return this.http.post('https://firstdemo-5eadd.firebaseio.com/signup.json', {user});
+      return this.http.post('https://messapp-9fd1a.firebaseio.com/newUser.json', {user});
   }
 }
+
