@@ -74,11 +74,6 @@ html, body {
       border-bottom: 0px none;
       width: 104%;
   }
-  //  input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-    
-  //     width: 104%;
-   
-  // }
 
 
 
@@ -101,3 +96,24 @@ html, body {
       left:250px;
       width: 1px;
   }
+
+
+
+input {
+  margin-top: 5px;
+  width: 400px;
+}
+
+#input {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  background-color: white;
+  background-color: -moz-field;
+  border: 1px solid darkgray;
+  box-shadow: 1px 1px 1px 0 lightgray inset;  
+  font: -moz-field;
+  font: -webkit-small-control;
+  margin-top: 5px;
+  padding: 2px 3px;
+  width: 398px;    
+}
