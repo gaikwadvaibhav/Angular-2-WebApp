@@ -53,7 +53,6 @@ export class AddMessComponent implements OnInit {
       this.brd2 = '  lightgrey';
       this.brd1 = '';
       this.brd3 = '';
-      
     }
     }
 
@@ -65,10 +64,7 @@ export class AddMessComponent implements OnInit {
       this.brd3 = '  lightgrey';
       this.brd2 = '';
       this.brd1 = '';
-      
     }
     }
-
-     
 
 }

@@ -1,9 +1,11 @@
+import { User } from './../sign-up-form/user';
 import { Component, OnInit } from '@angular/core';
 // import { AppGlobals } from 'angular2-google-login';
 // import { AngularFireAuth } from 'angularfire2/auth';
 // import { Router } from '@angular/router';
 // import {NgForm } from '@angular/forms';
 // import { AuthService } from '../../auth.service';
+import { SignupService } from '../sign-up-form/signup.service';
 
  @Component({
   selector: 'app-login-form',
@@ -12,12 +14,22 @@ import { Component, OnInit } from '@angular/core';
   providers: [ ]
 })
 export class LoginFormComponent implements OnInit {
-   ngOnInit() {
+  user: User;
+
+  ngOnInit() {
    }
-   constructor() {
-  } 
+   constructor(
+     private signup: SignupService
+   ) {
+     this.user = new User();
   }
 
+  Onlogin() {
+    this.signup.signIn(this.user, info => {
+      console.log('' + (info ? 'success' : 'fail'));
+    });
+  }
+}
   //  AuthService: any;
 
   // imageURL: string;
@@ -37,3 +49,4 @@ export class LoginFormComponent implements OnInit {
   //   ngOnInit() {
   //   }
   // }
+

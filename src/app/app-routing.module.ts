@@ -9,7 +9,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { AddMessComponent } from './add-mess/add-mess.component';
-
 export const routes: Routes = [
   // { path: '', component: NavBarComponent},
   // { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -20,7 +19,7 @@ export const routes: Routes = [
   { path: 'resetpass', component: ResetPassFormComponent},
   { path: 'searchresult', component: SearchResultComponent},
   { path: 'viewmess', component: ViewMessComponent},
-  { path: 'addmess', component: AddMessComponent}  
+   { path: 'addmess', component: AddMessComponent}
 ];
 
 @NgModule({

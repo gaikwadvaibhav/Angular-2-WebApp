@@ -30,6 +30,7 @@ export class SignUpFormComponent implements OnInit {
     user.email = myForm.value.email;
     user.password = myForm.value.password;
     user.confirmpassword = myForm.value.confirmpassword;
-    this.signup.saveUser(user).subscribe(res => console.log(res));
+    this.signup.saveUser(user);
+    // .subscribe(res => console.log(res));
   }
 }

@@ -1,3 +1,4 @@
+import { UserService } from './user.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +28,6 @@ import { SearchResultComponent } from './search-result/search-result.component';
 import { ViewMessComponent } from './view-mess/view-mess.component';
 import { AddMessComponent } from './add-mess/add-mess.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
 // const firebase = {
 //   apiKey: 'AIzaSyAcL-E-mqaGw-xg0ly9v_PzsSTwDOEYOFU',
 //   authDomain: 'firstdemo-5eadd.firebaseapp.com',
@@ -63,9 +63,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     // AngularFireDatabaseModule,
     // AngularFireModule.initializeApp(firebase),
     // RouterModule.forRoot(routes)
-
-
-
 
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
